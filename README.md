@@ -30,8 +30,10 @@ The planned disc profiles are **Europe / PAL (`GSAP01`)** and
 **North America / NTSC-U (`GSAE01`)**. PAL menu, gameplay, language selection and save/load have owner hardware acceptance.
 NTSC-U gameplay has not been verified.
 
-**No game data is included.** Disc images, original game code, textures, music
-and saves must not be uploaded to this repository or attached to issues.
+**No game disc or original game assets are included.** Disc images, extracted
+original executables, textures, music and saves must not be uploaded to this
+repository or attached to issues. The separate source archive contains the
+native port/reconstruction sources and their original license notices.
 
 ## Download and installation
 
@@ -61,6 +63,17 @@ This project depends on the work of the following upstream communities:
 | [Foxhollow](https://github.com/JackPriceBurns/foxhollow) | JackPriceBurns and Foxhollow contributors | Native PC port used as the PS5 integration reference |
 | [Aurora](https://github.com/encounter/aurora) | encounter and Aurora contributors | Graphics compatibility framework used by the native foundation |
 | [ps5-payload-sdk](https://github.com/ps5-payload-dev/sdk) | Open PS5 payload SDK contributors | Open homebrew target toolchain |
+| [PS5_Vulkan](https://github.com/mihawk-99/PS5_Vulkan) | mihawk-99 and contributors | Native PS5 platform, graphics integration and conversion tooling |
+| Native app runtime/companion | BlackBearReloaded and ps5-native-app-boilerplate contributors | Native startup/runtime and generated loader companion; original GPL notices retained |
+| [Dawn](https://dawn.googlesource.com/dawn) | The Dawn Authors and contributors | WebGPU implementation used by the rendering stack |
+| [Mesa / RADV](https://gitlab.freedesktop.org/mesa/mesa) | Mesa contributors and the RADV developers | Vulkan graphics driver |
+| [SDL](https://github.com/libsdl-org/SDL) | Sam Lantinga and SDL contributors | Windowing, audio and controller support |
+
+Borealis, nod, Dear ImGui, FreeType, libpng, fmt, SQLite, Tracy, xxHash, zlib,
+Zstandard, Corrosion and the remaining transitive dependencies also retain
+their original authorship and notices in the corresponding source archive.
+BaZZtian maintains this PS5 integration; upstream authors retain credit for
+their engines, libraries and platform work.
 
 ## Licensing and attribution
 
@@ -71,6 +84,21 @@ not automatically cover every nested component or the original game data.
 The existing [MIT license](LICENSE) covers the independently authored code
 previously distributed under that grant. Upstream components retain their own
 licenses, copyright notices and attribution.
+
+The distributed application combines separately licensed components:
+
+| Scope | License information |
+| --- | --- |
+| Independently authored repository code already covered by the existing grant | MIT; see [LICENSE](LICENSE) |
+| SFA-Decomp / Foxhollow native foundation | Upstream CC0-1.0 declarations, with nested dependency notices preserved |
+| Native PS5 platform/runtime and generated companion | GPL-3.0-or-later notices and corresponding sources included with the release |
+| Aurora, Dawn, SDL, Mesa/RADV and other dependencies | Their own component/file licenses; see the bundled notices and source archive |
+
+The Store's `MIT AND GPL-3.0-or-later` expression summarizes the repository and
+platform/runtime scopes. It is not an exhaustive replacement for dependency
+licenses and does not relicense third-party files. The root MIT notice does
+not describe the entire combined executable. The source archive includes a
+file-hash inventory; a clean-machine rebuild has not been verified.
 
 This is an unofficial homebrew project, not affiliated with, endorsed by or
 sponsored by Nintendo or Rare. Original game content remains the property of
