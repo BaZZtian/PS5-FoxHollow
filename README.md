@@ -1,27 +1,12 @@
 <p align="center">
-  <img src="assets/branding/foxhollow-icon-v2.png" width="160" height="160" alt="FoxHollow project icon">
+  <img src="assets/branding/foxhollow-icon-v2.png" width="160" alt="FoxHollow fox emblem">
 </p>
 
 <h1 align="center">FoxHollow</h1>
+<p align="center"><strong>A dedicated native PlayStation 5 port project for Star Fox Adventures.</strong></p>
+<p align="center">Target firmware 12.40 | Bring your own GameCube disc image</p>
 
-<p align="center">
-  <strong>Star Fox Adventures on PlayStation 5</strong><br>
-  An unofficial PS5 homebrew port project based on Foxhollow and SFA-Decomp, maintained by <a href="https://github.com/BaZZtian">BaZZtian</a>.
-</p>
-
-<p align="center">
-  <a href="#status-and-availability"><img src="https://img.shields.io/badge/status-in%20development-orange" alt="Status: in development"></a>
-  <img src="https://img.shields.io/badge/platform-PS5%20homebrew-003791" alt="Platform: PS5 homebrew">
-  <a href="#requirements"><img src="https://img.shields.io/badge/game%20data-Own%20GameCube%20ISO-555555" alt="Game data: Own GameCube ISO"></a>
-</p>
-
-<p align="center">
-  <a href="#status-and-availability">Status</a> &middot;
-  <a href="#installation">Installation</a> &middot;
-  <a href="#compatibility">Compatibility</a> &middot;
-  <a href="#support">Support</a> &middot;
-  <a href="#credits-and-licenses">Credits &amp; licenses</a>
-</p>
+![FoxHollow original project artwork](assets/branding/foxhollow-background-v3.png)
 
 ## About
 
@@ -34,46 +19,39 @@ Maintained by **BaZZtian**, with the goal of a standalone PS5 homebrew title
 using native graphics, audio and DualSense input. FoxHollow is dedicated to
 this game and uses the native PC port as its foundation.
 
-<p align="center">
-  <img src="assets/branding/foxhollow-background-v3.png" width="900" alt="FoxHollow original project artwork; not a gameplay screenshot">
-</p>
-
-## Status and availability
-
-> [!WARNING]
-> **In development. No playable PS5 download is available yet.**
-
-The project is still being implemented and tested. A planned disc profile is not verified PS5 gameplay support.
+**Version 0.1.4: early PAL release tested on PS5 firmware 12.40.**
 
 ## Requirements
 
 - A homebrew-capable PlayStation 5. Target firmware: **12.40**.
 - Your own legally obtained **Star Fox Adventures** GameCube disc image.
 
+The planned disc profiles are **Europe / PAL (`GSAP01`)** and
+**North America / NTSC-U (`GSAE01`)**. PAL menu, gameplay, language selection and save/load have owner hardware acceptance.
+NTSC-U gameplay has not been verified.
+
 **No game data is included.** Disc images, original game code, textures, music
 and saves must not be uploaded to this repository or attached to issues.
 
-## Installation
+## Download and installation
 
-Installation instructions will accompany the first tested app release on the
-[Releases page](https://github.com/BaZZtian/PS5-FoxHollow/releases).
+Download `FoxHollow-0.1.4-PPSA99573.zip` from the
+[Releases page](https://github.com/BaZZtian/PS5-FoxHollow/releases/tag/v0.1.4).
+Extract the `PPSA99573` folder to `/data/homebrew/` on your console, then launch
+FoxHollow through your native homebrew title launcher. Place your own PAL
+`GSAP01` disc image at `/data/foxhollow/media/game.iso`. Game data is not included.
+Keep `/data/foxhollow/state/` when updating; it contains your settings and saves.
 
-## Compatibility
+Version 0.1.4 corrects the language-menu layout and memory-card file inspection.
+The language selection is in the existing LANGUAGE menu. Original HUD artwork,
+widescreen switching and configurable PS5 controls are retained.
 
-| GameCube edition | Disc ID | PS5 gameplay |
-| --- | --- | --- |
-| Europe / PAL | `GSAP01` | Not verified |
-| North America / NTSC-U | `GSAE01` | Not verified |
+The same release provides `FoxHollow-0.1.4-source.tar.gz`, containing the
+corresponding port/platform/dependency sources, build instructions and original
+license notices. The bundled platform/runtime includes GPL-3.0-or-later code;
+the repository's MIT notice does not replace third-party licenses.
 
-These are planned disc profiles. Disc identification does not establish gameplay compatibility or support for every revision.
-
-## Support
-
-Use [GitHub Issues](https://github.com/BaZZtian/PS5-FoxHollow/issues) for project questions and reproducible problem reports. Include the project revision, disc region and revision, reproduction steps, expected result and actual result.
-
-Do not attach disc images, extracted game files, music, saves, memory dumps, keys, credentials or proprietary SDK material. Remove personal information before sharing reports.
-
-## Credits and licenses
+## Credits
 
 This project depends on the work of the following upstream communities:
 
@@ -84,7 +62,7 @@ This project depends on the work of the following upstream communities:
 | [Aurora](https://github.com/encounter/aurora) | encounter and Aurora contributors | Graphics compatibility framework used by the native foundation |
 | [ps5-payload-sdk](https://github.com/ps5-payload-dev/sdk) | Open PS5 payload SDK contributors | Open homebrew target toolchain |
 
-### Licensing
+## Licensing and attribution
 
 SFA-Decomp and Foxhollow publish CC0-1.0 declarations. Their notices and those
 of separately licensed dependencies remain applicable. A root license does
