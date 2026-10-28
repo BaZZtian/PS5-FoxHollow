@@ -26,9 +26,9 @@ this game and uses the native PC port as its foundation.
 - A homebrew-capable PlayStation 5. Target firmware: **12.40**.
 - Your own legally obtained **Star Fox Adventures** GameCube disc image.
 
-The planned disc profiles are **Europe / PAL (`GSAP01`)** and
-**North America / NTSC-U (`GSAE01`)**. PAL menu, gameplay, language selection and save/load have owner hardware acceptance.
-NTSC-U gameplay has not been verified.
+This release supports **Europe / PAL (`GSAP01`)** on PS5 firmware **12.40**,
+including gameplay, language selection and save/load.
+**North America / NTSC-U (`GSAE01`)** has not been verified.
 
 **No game disc or original game assets are included.** Disc images, extracted
 original executables, textures, music and saves must not be uploaded to this
@@ -97,8 +97,7 @@ The distributed application combines separately licensed components:
 The Store's `MIT AND GPL-3.0-or-later` expression summarizes the repository and
 platform/runtime scopes. It is not an exhaustive replacement for dependency
 licenses and does not relicense third-party files. The root MIT notice does
-not describe the entire combined executable. The source archive includes a
-file-hash inventory; a clean-machine rebuild has not been verified.
+not describe the entire combined executable.
 
 This is an unofficial homebrew project, not affiliated with, endorsed by or
 sponsored by Nintendo or Rare. Original game content remains the property of
