@@ -19,12 +19,12 @@ Maintained by **BaZZtian**, with the goal of a standalone PS5 homebrew title
 using native graphics, audio and DualSense input. FoxHollow is dedicated to
 this game and uses the native PC port as its foundation.
 
-**Early PAL build for PS5 firmware 12.40.**
+**PAL release for PS5 firmware 12.40.**
 
 
 ## Start here
 
-Choose the PS5 app ZIP for title `PPSA99573`. The early PAL build targets firmware 12.40. Keep a backup of `/data/foxhollow/state/` before updating.
+Choose the PS5 app ZIP for title `PPSA99573`. The PAL release targets firmware 12.40. Keep a backup of `/data/foxhollow/state/` before updating.
 
 [Download v00.001.005](https://github.com/BaZZtian/PS5-FoxHollow/releases/tag/v00.001.005)
 
