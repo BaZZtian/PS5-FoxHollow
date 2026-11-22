@@ -19,7 +19,14 @@ Maintained by **BaZZtian**, with the goal of a standalone PS5 homebrew title
 using native graphics, audio and DualSense input. FoxHollow is dedicated to
 this game and uses the native PC port as its foundation.
 
-**Version 0.1.4: early PAL release tested on PS5 firmware 12.40.**
+**Early PAL build for PS5 firmware 12.40.**
+
+
+## Start here
+
+Choose the PS5 app ZIP for title `PPSA99573`. The early PAL build targets firmware 12.40. Keep a backup of `/data/foxhollow/state/` before updating.
+
+[Download v00.001.005](https://github.com/BaZZtian/PS5-FoxHollow/releases/tag/v00.001.005)
 
 ## Requirements
 
@@ -37,18 +44,13 @@ native port/reconstruction sources and their original license notices.
 
 ## Download and installation
 
-Download `FoxHollow-0.1.4-PPSA99573.zip` from the
-[Releases page](https://github.com/BaZZtian/PS5-FoxHollow/releases/tag/v0.1.4).
+Download the PS5 app ZIP from [v00.001.005](https://github.com/BaZZtian/PS5-FoxHollow/releases/tag/v00.001.005).
 Extract the `PPSA99573` folder to `/data/homebrew/` on your console, then launch
 FoxHollow through your native homebrew title launcher. Place your own PAL
 `GSAP01` disc image at `/data/foxhollow/media/game.iso`. Game data is not included.
 Keep `/data/foxhollow/state/` when updating; it contains your settings and saves.
 
-Version 0.1.4 corrects the language-menu layout and memory-card file inspection.
-The language selection is in the existing LANGUAGE menu. Original HUD artwork,
-widescreen switching and configurable PS5 controls are retained.
-
-The same release provides `FoxHollow-0.1.4-source.tar.gz`, containing the
+The release also provides a separate archive containing the
 corresponding port/platform/dependency sources, build instructions and original
 license notices. The bundled platform/runtime includes GPL-3.0-or-later code;
 the repository's MIT notice does not replace third-party licenses.
